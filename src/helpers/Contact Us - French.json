@@ -1,208 +1,54 @@
 {
-    "pageId": "65427cf400e02b306eaa0496",
-    "nodes": [
-        {
-            "id": "8017772e-bc46-5c59-54c0-134cdfd4b03a",
-            "type": "text",
-            "text": {
-                "html": "<h2>Contactez-nous</h2>",
-                "text": "Contactez-nous"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "8017772e-bc46-5c59-54c0-134cdfd4b03c",
-            "type": "text",
-            "text": {
-                "html": "<p>Notre équipe d'experts en finances n'est qu'à un appel téléphonique. Composez notre numéro sans frais, et discutons !<br></p>",
-                "text": "Notre équipe d'experts en finances n'est qu'à un appel téléphonique. Composez notre numéro sans frais, et discutons !\n"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "aa9e4de0-011e-ac64-cbc2-3ec4fa3a8bb8",
-            "type": "text",
-            "text": {
-                "html": "<a>hello@astralfunds.com</a>",
-                "text": "hello@astralfunds.com"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "aa9e4de0-011e-ac64-cbc2-3ec4fa3a8bbd",
-            "type": "text",
-            "text": {
-                "html": "<a>+1 (555) 000-0000</a>",
-                "text": "+1 (555) 000-0000"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "aa9e4de0-011e-ac64-cbc2-3ec4fa3a8bc2",
-            "type": "text",
-            "text": {
-                "html": "<a>398 11th Street, 2ème étage, San Francisco, CA 94103</a>",
-                "text": "398 11th Street, 2ème étage, San Francisco, CA 94103"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "8017772e-bc46-5c59-54c0-134cdfd4b046",
-            "type": "text",
-            "text": {
-                "html": null,
-                "text": "Nom de famille\n"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "2c17ec51-d83f-eba2-a878-4ff2b40d1b0c",
-            "type": "text",
-            "text": {
-                "html": null,
-                "text": "Prénom\n"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "8017772e-bc46-5c59-54c0-134cdfd4b04b",
-            "type": "text",
-            "text": {
-                "html": null,
-                "text": "Département à contacter\n"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "8017772e-bc46-5c59-54c0-134cdfd4b051",
-            "type": "text",
-            "text": {
-                "html": null,
-                "text": "Banque"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "8017772e-bc46-5c59-54c0-134cdfd4b055",
-            "type": "text",
-            "text": {
-                "html": null,
-                "text": "Investissements"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "df8280e0-4bc1-22f9-bf25-1f83be1ffb22",
-            "type": "text",
-            "text": {
-                "html": null,
-                "text": "Autre"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "8017772e-bc46-5c59-54c0-134cdfd4b058",
-            "type": "text",
-            "text": {
-                "html": null,
-                "text": "Email"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "62a737dc-6989-e8da-06c9-7f7538cca26c",
-            "type": "text",
-            "text": {
-                "html": null,
-                "text": "Numéro de téléphone"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "8017772e-bc46-5c59-54c0-134cdfd4b06b",
-            "type": "text",
-            "text": {
-                "html": null,
-                "text": "Votre message"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "8017772e-bc46-5c59-54c0-134cdfd4b0c4",
-            "type": "text",
-            "text": {
-                "html": "<p>Merci ! Votre message a été reçu.</p>",
-                "text": "Merci ! Votre message a été reçu."
-            },
-            "attributes": {}
-        },
-        {
-            "id": "8017772e-bc46-5c59-54c0-134cdfd4b0c6",
-            "type": "text",
-            "text": {
-                "html": "<p>Notre équipe répondra à votre message dès que possible. Merci de votre patience.</p>",
-                "text": "Notre équipe répondra à votre message dès que possible. Merci de votre patience."
-            },
-            "attributes": {}
-        },
-        {
-            "id": "8017772e-bc46-5c59-54c0-134cdfd4b0c9",
-            "type": "text",
-            "text": {
-                "html": "<div>Oups ! Quelque chose s'est mal passé lors de l'envoi de votre message.</div>",
-                "text": "Oups ! Quelque chose s'est mal passé lors de l'envoi de votre message."
-            },
-            "attributes": {}
-        },
-        {
-            "id": "36c1f507-a281-83c4-8222-873b4179b955",
-            "type": "text",
-            "text": {
-                "html": "<h1>Commencez à banquer maintenant</h1>",
-                "text": "Commencez à banquer maintenant"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "36c1f507-a281-83c4-8222-873b4179b957",
-            "type": "text",
-            "text": {
-                "html": "<div>Adoptez une nouvelle ère de gestion financière</div>",
-                "text": "Adoptez une nouvelle ère de gestion financière"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "36c1f507-a281-83c4-8222-873b4179b95b",
-            "type": "text",
-            "text": {
-                "html": "<div>Commencez</div>",
-                "text": "Commencez"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "36c1f507-a281-83c4-8222-873b4179b95e",
-            "type": "text",
-            "text": {
-                "html": "<div>En savoir plus</div>",
-                "text": "En savoir plus"
-            },
-            "attributes": {}
-        },
-        {
-            "id": "36c1f507-a281-83c4-8222-873b4179b960",
-            "type": "image",
-            "image": {
-                "alt": "__wf_reserved_inherit",
-                "assetId": "65427cf400e02b306eaa04b7"
-            },
-            "attributes": {}
-        }
-    ],
-    "pagination": {
-        "limit": 100,
-        "offset": 0,
-        "total": 22
+  "pageId": "65427cf400e02b306eaa0496",
+  "nodes": [
+    {
+      "nodeId": "8017772e-bc46-5c59-54c0-134cdfd4b03a",
+      "text": "<h2>Contactez-nous</h2>"
+    },
+    {
+      "nodeId": "8017772e-bc46-5c59-54c0-134cdfd4b03c",
+      "text": "<p>Notre équipe d'experts en finances n'est qu'à un appel téléphonique. Composez notre numéro sans frais, et discutons !<br></p>"
+    },
+    {
+      "nodeId": "aa9e4de0-011e-ac64-cbc2-3ec4fa3a8bb8",
+      "text": "<a>hello@astralfunds.com</a>"
+    },
+    {
+      "nodeId": "aa9e4de0-011e-ac64-cbc2-3ec4fa3a8bbd",
+      "text": "<a>+1 (555) 000-0000</a>"
+    },
+    {
+      "nodeId": "aa9e4de0-011e-ac64-cbc2-3ec4fa3a8bc2",
+      "text": "<a>398 11th Street, 2ème étage, San Francisco, CA 94103</a>"
+    },
+    {
+      "nodeId": "8017772e-bc46-5c59-54c0-134cdfd4b0c4",
+      "text": "<p>Merci ! Votre message a été reçu.</p>"
+    },
+    {
+      "nodeId": "8017772e-bc46-5c59-54c0-134cdfd4b0c6",
+      "text": "<p>Notre équipe répondra à votre message dès que possible. Merci de votre patience.</p>"
+    },
+    {
+      "nodeId": "8017772e-bc46-5c59-54c0-134cdfd4b0c9",
+      "text": "<div>Oups ! Quelque chose s'est mal passé lors de l'envoi de votre message.</div>"
+    },
+    {
+      "nodeId": "36c1f507-a281-83c4-8222-873b4179b955",
+      "text": "<h1>Commencez à banquer maintenant</h1>"
+    },
+    {
+      "nodeId": "36c1f507-a281-83c4-8222-873b4179b957",
+      "text": "<div>Adoptez une nouvelle ère de gestion financière</div>"
+    },
+    {
+      "nodeId": "36c1f507-a281-83c4-8222-873b4179b95b",
+      "text": "<div>Commencez</div>"
+    },
+    {
+      "nodeId": "36c1f507-a281-83c4-8222-873b4179b95e",
+      "text": "<div>En savoir plus</div>"
     }
+  ],
+  "pagination": { "limit": 100, "offset": 0, "total": 22 }
 }

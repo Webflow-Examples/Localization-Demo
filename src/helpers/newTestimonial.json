@@ -1,4 +1,5 @@
 {
+  "fieldData": {
     "name": "Claire Dubois",
     "slug": "claire-dubois",
     "headshot": {
@@ -8,4 +9,5 @@
     "alt-text-for-images": "Portrait de la cliente Claire Dubois.",
     "years-as-a-customer": "Cliente depuis 3 ans",
     "quote": "La conformité aux réglementations de l'Autorité des marchés financiers est cruciale pour notre entreprise. L'expertise d'AstralFund en matière de réglementation française nous a permis de naviguer avec succès dans ces eaux complexes."
+  }
 }

@@ -1,23 +1,14 @@
 {
-    "id": "65427cf400e02b306eaa0496",
-    "siteId": "65427cf400e02b306eaa049c",
-    "parentId": null,
-    "collectionId": null,
-    "title": "Contactez-nous",
-    "slug": "contactez-nous",
-    "createdOn": "2023-09-08T18:39:25.810Z",
-    "lastUpdated": "2023-11-06T21:08:20.405Z",
-    "archived": false,
-    "draft": false,
-    "canBranch": true,
-    "seo": {
-        "title": "Contactez-nous | AstralFund Financier",
-        "description": "Contactez AstralFund Financier pour des conseils financiers experts et un soutien. Notre équipe dédiée est là pour vous aider sur votre chemin vers le succès financier. Contactez-nous aujourd'hui."
-    },
-    "openGraph": {
-        "title": "AstralFund Financier - Votre partenaire pour la réussite financière",
-        "titleCopied": true,
-        "description": "Découvrez les services financiers personnalisés d'AstralFund et prenez le contrôle de votre avenir financier. Contactez-nous pour en savoir plus.",
-        "descriptionCopied": true
-    }
+  "title": "Contactez-nous",
+  "slug": "contactez-nous",
+  "seo": {
+    "title": "Contactez-nous | AstralFund Financier",
+    "description": "Contactez AstralFund Financier pour des conseils financiers experts et un soutien. Notre équipe dédiée est là pour vous aider sur votre chemin vers le succès financier. Contactez-nous aujourd'hui."
+  },
+  "openGraph": {
+    "title": "AstralFund Financier - Votre partenaire pour la réussite financière",
+    "titleCopied": true,
+    "description": "Découvrez les services financiers personnalisés d'AstralFund et prenez le contrôle de votre avenir financier. Contactez-nous pour en savoir plus.",
+    "descriptionCopied": true
+  }
 }
