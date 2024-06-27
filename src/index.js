@@ -1,8 +1,9 @@
 // We've gone ahead and translated most of the Conent we need in the files below
 import localizedDOM from "./helpers/Contact Us - French.json" assert { type: "json" }; // Localized "Contact Us DOM
-import localizedMetadata from "./helpers/seoData.json" assert { type: "json" }; // Localized SEO Data
+import localizedMetadataBody from "./helpers/seoData.json" assert { type: "json" }; // Localized SEO Data
 import frenchTestimonials from "./helpers/Testimonials - French.json" assert { type: "json" }; // Localized Testimonials
 import newTestimonial from "./helpers/newTestimonial.json" assert { type: "json" }; // New French Testimonial
+
 import { WebflowClient } from "webflow-api";
 import dotenv from "dotenv";
 
@@ -40,51 +41,79 @@ async function run() {
     // Get the DOM for the Contact Us page in English and translate to French
     const primaryContactPageDom = await webflow.pages.getContent(contactPageId);
 
+    // Create the domWrite object with the nodes and cmsLocaleId
+    const domWrite = {
+      nodes: localizedDOM.nodes,
+      locale: secondaryLocaleId,
+    };
+
     // Update the Contact Us page DOM with French content
-    await webflow.pages.updateStaticContent(
-      contactPageId,
-      localizedDOM,
-      secondaryLocaleId
-    );
+    await webflow.pages.updateStaticContent(contactPageId, domWrite);
 
     /* 🔮 Step 3: Localize SEO Data 🔮 */
 
     // Get page metadata with localized SEO data
     const pageMetadata = await webflow.pages.getMetadata(contactPageId);
+
+    // Create Localized Page Setting Request
+    const localizedMetadata = {};
+    localizedMetadata.locale = secondaryLocaleId;
+    localizedMetadata.body = localizedMetadataBody;
+
+    // Update Metadata
     await webflow.pages.updatePageSettings(contactPageId, localizedMetadata);
 
     /* 🔮 Step 4: Manage Testimonials via th CMS 🔮 */
 
-    // Work with CMS data for testimonials
-    const collections = await webflow.collections.list(siteId);
+    // Get Collections
+    const collectionsData = await webflow.collections.list(siteId);
+    const collections = collectionsData.collections
+
+    // Find Testimonials Collection
     const testimonialsCollectionId = collections.find(
       (collection) => collection.displayName === "Testimonials"
     ).id;
-    const items = await webflow.collections.items.listItems(
+
+    // Get Testimonial Collection Items
+    const itemsData = await webflow.collections.items.listItems(
       testimonialsCollectionId
     );
+    const items = itemsData.items
 
     // Translate Testimonials, setting the first one to draft
     try {
+      // For each CMS item
       for (const [index, value] of items.entries()) {
+    
+        // Add the secondary `cmsLocaleId` to the item
+        frenchTestimonials[index].cmsLocaleId = secondaryCmsLocaleId;
+        
+        // Update the CMS item
         const updatedItem = await webflow.collections.items.updateItemLive(
           testimonialsCollectionId,
-          frenchTestimonials[index],
-          secondaryCmsLocaleId
+          value.id,
+          frenchTestimonials[index]
         );
-        console.log(`Item:`, updatedItem.data);
+        console.log(`Item:`, updatedItem);
       }
     } catch (error) {
       console.error(`Error updating CMS items:`, error);
       throw error;
     }
 
-    // Create a French-Only Testimonial
-    await webflow.collections.items.createItem(
-      testimonialsCollectionId,
-      newTestimonial,
-      secondaryCmsLocaleId
-    );
+// Set the `cmsLocaleId` of the new item
+newFrenchTestimonial.cmsLocaleId = secondaryCmsLocaleId;
+
+// Create new item
+try{
+const newTestimonial = await webflow.collections.items.createItem(
+  testimonialsCollectionId,
+  newFrenchTestimonial
+);
+console.log("Localization process completed successfully.");
+} catch (error) {
+  console.error("An error occurred:", error);
+}
 
     console.log("Localization process completed successfully.");
   } catch (error) {
